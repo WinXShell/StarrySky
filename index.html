@@ -2,18 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link id="theme_css" rel="stylesheet" href="./style.css" type="text/css" media="screen"/>
-    <title>Test</title>
+    <link id="theme-css" rel="stylesheet" href="style.css" type="text/css" media="screen"/>
   </head>
   <body>
     <div class="header">
-      
-      <div class="ctrlBtn">
-        <div id="win-skin" class="win-skin" onclick="winCtrlBtn('win-skin')"></div>
-        <div id="win-min" class="win-min" onclick="winCtrlBtn('win-min')"></div>
-        <div id="win-max" class="win-max" onclick="winCtrlBtn('win-max')"></div>
-        <div id="win-close" class="win-close" onclick="winCtrlBtn('win-close')"></div>
-      </div>
+     <div class="head" onclick="winHeadBtn()"></div>
+     <div class="header-top">
+       <div class="ctrlButton">
+        <div id="win-theme" class="buttonTheme" onclick="winCtrlBtn('win-skin')"></div>
+        <div id="win-theme" class="buttonTheme" onclick="winCtrlBtn('win-skin')"></div>
+        <div id="win-min" class="buttonMin" onclick="winCtrlBtn('win-min')"></div>
+        <div id="win-max" class="buttonMax" onclick="winCtrlBtn('win-max')"></div>
+        <div id="win-close" class="buttonClose" onclick="winCtrlBtn('win-close')"></div>
+       </div>
+     </div>
+     <div class="header-bottom">
+
+     </div>
     </div>
     <script src="./renderer.js"></script>
   </body>

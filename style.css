@@ -1,12 +1,35 @@
+@font-face {font-family: "iconfont";
+    src: url('./Font/iconfont.ttf?t=1606644388156') format('truetype');
+}
+
 body, html {
     margin:0;
     padding:0;
-    height: 100%; 
     overflow: hidden;
+    background-color: #CCCCFF;
 }
 
-
 .header {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.head {
+    -webkit-app-region: no-drag;
+    height: 60px;
+    width: 60px;
+    border:5px solid red;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.header-top {
     -webkit-user-select: none;
     -webkit-app-region: drag;
     height: 30px;
@@ -15,45 +38,133 @@ body, html {
     top: 0;
 }
 
-.ctrlBtn {
+.header-bottom {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.ctrlButton {
     -webkit-user-select: none;
     height: 30px;
-    width: 188px;
+    width: 230px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0px;
+    top: 0px;
 }
-.ctrlBtn div {
+.ctrlButton div {
     -webkit-app-region: no-drag;
-    -webkit-text-stroke-width: lighter;
-    width: 47px;
-    height: 30px;
+    width: 46px;
+    height: 100%;
     float: left;
     margin: 0;
     padding: 0;
 }
 
-.win-skin {
-    background: url(images/media/win-skin.svg) no-repeat center center;
+
+
+.buttonTheme {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    text-align:center;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.win-skin:hover {
-    background-color:rgba(222,222,222,0.8) !important;
+
+.buttonTheme:before {
+    content: "\e684";
 }
-.win-min {
-    background: url(images/media/win-min.svg) no-repeat center center;
+
+.buttonTheme:hover {
+    background-color:#E6E6E6CC !important;
 }
-.win-min:hover {
-    background-color:rgba(222,222,222,0.8) !important;
+.buttonMin {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    text-align:center;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.win-max {
-    background: url(images/media/win-max.svg) no-repeat center center;
+
+.buttonMin:before {
+    content: "\e6b6";
 }
-.win-max:hover {
-    background-color:rgba(222,222,222,0.8) !important;
+
+.buttonMin:hover {
+    background-color:#E6E6E6CC !important;
 }
-.win-close {
-    background: url(images/media/win-close.svg) no-repeat center center;
+
+.buttonMax {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    text-align:center;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.win-close:hover {
-    background:rgba(232,17,35,0.9) url(images/media/win-close-dark.svg) no-repeat center center !important;
+
+.buttonMax:before {
+    content: "\e6b4";
+}
+
+.buttonMax:hover {
+    background-color:#E6E6E6CC !important;
+}
+
+.buttonRestore {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    text-align:center;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.buttonRestore:before {
+    content: "\e6b5";
+}
+
+.buttonRestore:hover {
+    background-color:#E6E6E6CC !important;
+}
+
+.buttonClose {
+    font-family: "iconfont" !important;
+    font-size: 15px;
+    font-style: normal;
+    text-align:center;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.buttonClose:before {
+    content: "\e6b2";
+}
+
+.buttonClose:hover {
+    background:#E81123CC !important;
+    color: #FFFFFF;
+}
+
+.mainTitle {
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 210px;
+    margin-right: 120px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    top: 0;
 }
