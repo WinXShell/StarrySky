@@ -1,0 +1,1 @@
+const ipcRenderer = require('electron').ipcRenderer; // electron 通信模块
